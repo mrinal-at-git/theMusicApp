@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="373dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="16dp"
+        android:background="#00BCD4"
+        android:paddingLeft="25dp"
+        android:paddingRight="15dp"
+        android:text="@string/welcome_title"
+        android:textSize="36sp"
+        android:textStyle="bold|italic"
+        app:fontFamily="cursive"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <SeekBar
+        android:id="@+id/position_bar"
+        android:layout_width="317dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="264dp"
+        android:layout_height="197dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="72dp"
+        android:layout_marginRight="72dp"
+        android:contentDescription="@string/image_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text1"
+        app:srcCompat="@drawable/songs" />
+
+    <ImageButton
+        android:id="@+id/btn_pause"
+        android:layout_width="55dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="140dp"
+        android:layout_marginEnd="176dp"
+        android:layout_marginRight="176dp"
+        android:contentDescription="@string/btn_pause"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:srcCompat="@drawable/pause" />
+
+    <ImageButton
+        android:id="@+id/btn_play"
+        android:layout_width="50dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="140dp"
+        android:layout_marginEnd="84dp"
+        android:layout_marginRight="84dp"
+        android:contentDescription="@string/btn_play"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:srcCompat="@drawable/play" />
+
+    <ImageButton
+        android:id="@+id/btn_stop"
+        android:layout_width="62dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="140dp"
+        android:contentDescription="@string/btn_stop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:srcCompat="@drawable/stop" />
+
+    <TextView
+        android:id="@+id/elapsed_time"
+        android:layout_width="54dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:text="0:11"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/position_bar"
+        app:layout_constraintTop_toBottomOf="@+id/position_bar" />
+
+    <TextView
+        android:id="@+id/remaining_time"
+        android:layout_width="55dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:text="-1:45"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/position_bar"
+        app:layout_constraintTop_toBottomOf="@+id/position_bar" />
+
+    <SeekBar
+        android:id="@+id/volume_bar"
+        android:layout_width="208dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginRight="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_play" />
+
+    <ImageButton
+        android:id="@+id/btn_play2"
+        android:layout_width="39dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="284dp"
+        android:layout_marginRight="284dp"
+        android:contentDescription="@string/btn_play"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_stop"
+        app:srcCompat="@drawable/sound" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

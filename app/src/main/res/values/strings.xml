@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">The music app</string>
+    <string name="welcome_title">Play the Song you like</string>
+    <string name="btn_play">Play</string>
+    <string name="btn_pause">Pause</string>
+    <string name="btn_stop">Stop </string>
+    <string name="image_view">Photo </string>
+</resources>
